@@ -6,7 +6,9 @@ export default function App() {
   return (
     <>
       <Header />
-      <WorkshopList />
+      <main>
+        <WorkshopList />
+      </main>
       <Footer />
     </>
   );
