@@ -1,0 +1,45 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.product-list,
+.session-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.product-card,
+.session-card {
+  background-color: #ebebeb;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+
+  &.featured {
+    border-width: 2px;
+  }
+
+  &.sold-out {
+    opacity: 0.6;
+  }
+}
+
+.product-card-out-of-stock {
+  opacity: 0.6;
+}
+
+.product-card-featured {
+  font-weight: bold;
+}
+
+.info-box {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
